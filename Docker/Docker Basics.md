@@ -18,7 +18,17 @@ Architecture
 - `Docker Registry` : It is the place where all the images are present. DockerHub is the default registry for docker. You can have your own registry. When we do a pull or run, it looks up the registry for that image.
 
 ### Docker Images
-Docker image is a template for instruction to create a container. To make a docker image you can do that with a docker file. Read-only
+Docker image is a template for instruction to create a container. They contain all the packages, dependencies and  application files. It is an artifact that can be taken around and shared. To make a docker image you can do that with a docker file. Read-only. They
 
 ### Docker Containers
-Container is a runable instance of an Image. Attatch storages, connect them to network and do much more. You can start, create, delete, stop and move a docker container. A container properties are based on the image it is based on and the amount of d
+Container is a runable instance of an Image. Attatch storages, connect them to network and do much more. You can start, create, delete, stop and move a docker container. A container properties are based on the image. We can also specifiy any option at the time the container is spun.
+
+### Namespace
+Docker uses namespace, which is a feature of linux. Namespace lets docker isolate all the container running on the same hardware. It ensures portability and containers do not affect the underying OS.
+
+
+
+---
+## References
+https://www.interviewbit.com/docker-interview-questions/
+https://docs.docker.com/get-started/overview/
