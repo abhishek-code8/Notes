@@ -20,12 +20,14 @@ Controller:
 - etcd: Consistent and highly available key-value store used as kubernete's backing store for all cluster data
 - kuber-scheduler: Control plane component that watches for newly created pods which do not have a node and assigns them one. Takes into account a number of factors before allocating a pod to a node.
 - kube-controller-manager: A control plane component that runs control processes like node controller, job controller etc.
-- clou-controller-manager: A control plane component that embeds cloud specific control logics. It lets you link your cluster to the cloud provider's api that lets you isolate cloud resources that interact with your cluster with the rest.
+- cloud-controller-manager: A control plane component that embeds cloud specific control logics. It lets you link your cluster to the cloud provider's api that lets you isolate cloud resources that interact with your cluster with the rest.
 
 ### Node
 - kubelet: A agent that runs on each node and makes sure that the containers are running in the pod.
 - kube-proxy: is a network proxy that runs on each node and enables to implement the kubernetes service concept. It maintains network rules on the nodes. These network rules enables to network communication with your pod from inside or outside the cluster.
 - Container Runtime: It runs the containers inside the pods. Like Docker, containerd etc.
+- cadvisor: health and monitoring of the pod.
+
 
 
 ## References
